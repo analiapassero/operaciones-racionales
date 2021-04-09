@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+<title>operaciones_fracciones</title>
+<meta charset="utf-8">
+<meta name="Description" content="Permite aprender las operaciones básicas con fracciones."> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<meta name="theme-color" content="#000000"/>
+<meta name="mobile-web-app-capable" content="yes">
+<noscript>Sorry, JavaScript is required!</noscript>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="operaciones_fracciones" />
+<meta name="generator" content="VisualNEO Web (20.5.6)" />
+<meta name="date" content="2021-04-09 14:03" />
+<meta name="version" content="1.0" />
+<meta name="copyright" content="Copyright 2021 APBookmate" />
+<link rel="apple-touch-icon" href="img/logo_book_mate_512.png" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/nzAnimate.min.css">
+<link rel="stylesheet" href="css/neoapp-ui.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="ng-app" ng-app="NeoApp" ng-cloak>
+<div ng-controller="NeoApp_CoreCtrl" ng-view ng-cloak id="ng-view" class="app-viewport[NAB._pageEffect]"></div>
+<script type="text/ng-template" id="inicio">
+<div id="inicio">
+<img id="Image86" alt="" ng-src="img/logo_book_mate_2.png" class="[NAB.Image86_effect]" ng-style="NAB.Image86_style" ng-hide="NAB.Image86_hidden" ng-disabled="NAB.Image86_disabled">
+<h1 id="Headline36" class="[NAB.Headline36_effect]" ng-style="NAB.Headline36_style" ng-hide="NAB.Headline36_hidden" ng-disabled="NAB.Headline36_disabled">Operaciones con fracciones</h1>
+<img id="Image85" alt="" ng-src="img/book_mate_logo_contorno_horiz.png" class="[NAB.Image85_effect]" ng-style="NAB.Image85_style" ng-hide="NAB.Image85_hidden" ng-disabled="NAB.Image85_disabled">
+<img id="Image87" alt="" ng-src="img/flecha_avance.svg" class="[NAB.Image87_effect]" ng-style="NAB.Image87_style" ng-hide="NAB.Image87_hidden" ng-disabled="NAB.Image87_disabled" ng-click="Image87_click()">
+</div>
+</script>
+<script type="text/ng-template" id="operaciones_fracciones">
+<div id="operaciones_fracciones">
+<h1 id="Headline1" class="[NAB.Headline1_effect]" ng-style="NAB.Headline1_style" ng-hide="NAB.Headline1_hidden" ng-disabled="NAB.Headline1_disabled">Operaciones con fracciones</h1>
+<button id="PushButton7" type="button"  class="btn btn-primary [NAB.PushButton7_effect]" ng-style="NAB.PushButton7_style" ng-hide="NAB.PushButton7_hidden" ng-disabled="NAB.PushButton7_disabled" ng-click="PushButton7_click()"><span class="glyphicon glyphicon-remove"></span></button>
+<img id="Image80" alt="" ng-src="img/icono_suma.svg" class="[NAB.Image80_effect]" ng-style="NAB.Image80_style" ng-hide="NAB.Image80_hidden" ng-disabled="NAB.Image80_disabled" ng-click="Image80_click()">
+<img id="Image81" alt="" ng-src="img/icono_resta.svg" class="[NAB.Image81_effect]" ng-style="NAB.Image81_style" ng-hide="NAB.Image81_hidden" ng-disabled="NAB.Image81_disabled" ng-click="Image81_click()">
+<img id="Image82" alt="" ng-src="img/icono_multi.svg" class="[NAB.Image82_effect]" ng-style="NAB.Image82_style" ng-hide="NAB.Image82_hidden" ng-disabled="NAB.Image82_disabled" ng-click="Image82_click()">
+<img id="Image83" alt="" ng-src="img/icono_divi.svg" class="[NAB.Image83_effect]" ng-style="NAB.Image83_style" ng-hide="NAB.Image83_hidden" ng-disabled="NAB.Image83_disabled" ng-click="Image83_click()">
+<img id="Image84" alt="" ng-src="img/icono_combinado.svg" class="[NAB.Image84_effect]" ng-style="NAB.Image84_style" ng-hide="NAB.Image84_hidden" ng-disabled="NAB.Image84_disabled" ng-click="Image84_click()">
+<h4 id="Headline31" class="[NAB.Headline31_effect]" ng-style="NAB.Headline31_style" ng-hide="NAB.Headline31_hidden" ng-disabled="NAB.Headline31_disabled" ng-click="Headline31_click()">Suma</h4>
+<h4 id="Headline32" class="[NAB.Headline32_effect]" ng-style="NAB.Headline32_style" ng-hide="NAB.Headline32_hidden" ng-disabled="NAB.Headline32_disabled" ng-click="Headline32_click()">Resta</h4>
+<h4 id="Headline33" class="[NAB.Headline33_effect]" ng-style="NAB.Headline33_style" ng-hide="NAB.Headline33_hidden" ng-disabled="NAB.Headline33_disabled" ng-click="Headline33_click()">Multiplicación</h4>
+<h4 id="Headline34" class="[NAB.Headline34_effect]" ng-style="NAB.Headline34_style" ng-hide="NAB.Headline34_hidden" ng-disabled="NAB.Headline34_disabled" ng-click="Headline34_click()">División</h4>
+<h4 id="Headline35" class="[NAB.Headline35_effect]" ng-style="NAB.Headline35_style" ng-hide="NAB.Headline35_hidden" ng-disabled="NAB.Headline35_disabled" ng-click="Headline35_click()">Combinados</h4>
+</div>
+</script>
+<script type="text/ng-template" id="suma">
+<div id="suma">
+<svg id="Rectangle2"  class="[NAB.Rectangle2_effect]" ng-style="NAB.Rectangle2_style" ng-hide="NAB.Rectangle2_hidden" ng-disabled="NAB.Rectangle2_disabled"><rect width="100%" height="100%" /></svg>
+<svg id="Rectangle1"  class="[NAB.Rectangle1_effect]" ng-style="NAB.Rectangle1_style" ng-hide="NAB.Rectangle1_hidden" ng-disabled="NAB.Rectangle1_disabled"><rect width="100%" height="100%" /></svg>
+<h1 id="Headline3" class="[NAB.Headline3_effect]" ng-style="NAB.Headline3_style" ng-hide="NAB.Headline3_hidden" ng-disabled="NAB.Headline3_disabled">Suma de&nbsp;fracciones</h1>
+<div id="Paragraph1" class="[NAB.Paragraph1_effect]" ng-style="NAB.Paragraph1_style" ng-hide="NAB.Paragraph1_hidden" ng-disabled="NAB.Paragraph1_disabled"><strong>De igual denominador<br></strong>Se suman los numeradores y se deja el mismo denominador<br></div>
+<div id="Paragraph2" class="[NAB.Paragraph2_effect]" ng-style="NAB.Paragraph2_style" ng-hide="NAB.Paragraph2_hidden" ng-disabled="NAB.Paragraph2_disabled"><strong>De distinto denominador<br></strong>Se reducen las fracciones a común denominador, luego se suman los numeradores y se deja el mismo denominador.<br></div>
+<img id="Image1" alt="" ng-src="img/suma_igual_denominador.PNG" class="[NAB.Image1_effect]" ng-style="NAB.Image1_style" ng-hide="NAB.Image1_hidden" ng-disabled="NAB.Image1_disabled">
+<img id="Image2" alt="" ng-src="img/suma_igual_denominador_2.PNG" class="[NAB.Image2_effect]" ng-style="NAB.Image2_style" ng-hide="NAB.Image2_hidden" ng-disabled="NAB.Image2_disabled">
+<img id="Image3" alt="" ng-src="img/suma_distinto_denominador.PNG" class="[NAB.Image3_effect]" ng-style="NAB.Image3_style" ng-hide="NAB.Image3_hidden" ng-disabled="NAB.Image3_disabled">
+<img id="Image4" alt="" ng-src="img/mcm_suma.PNG" class="[NAB.Image4_effect]" ng-style="NAB.Image4_style" ng-hide="NAB.Image4_hidden" ng-disabled="NAB.Image4_disabled">
+<img id="Image11" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image11_effect]" ng-style="NAB.Image11_style" ng-hide="NAB.Image11_hidden" ng-disabled="NAB.Image11_disabled" ng-click="Image11_click()">
+<img id="Image16" alt="" ng-src="img/tarea.svg" class="[NAB.Image16_effect]" ng-style="NAB.Image16_style" ng-hide="NAB.Image16_hidden" ng-disabled="NAB.Image16_disabled" ng-click="Image16_click()">
+</div>
+</script>
+<script type="text/ng-template" id="resta">
+<div id="resta">
+<h1 id="Headline2" class="[NAB.Headline2_effect]" ng-style="NAB.Headline2_style" ng-hide="NAB.Headline2_hidden" ng-disabled="NAB.Headline2_disabled">Resta de&nbsp;fracciones</h1>
+<svg id="Rectangle3"  class="[NAB.Rectangle3_effect]" ng-style="NAB.Rectangle3_style" ng-hide="NAB.Rectangle3_hidden" ng-disabled="NAB.Rectangle3_disabled"><rect width="100%" height="100%" /></svg>
+<svg id="Rectangle4"  class="[NAB.Rectangle4_effect]" ng-style="NAB.Rectangle4_style" ng-hide="NAB.Rectangle4_hidden" ng-disabled="NAB.Rectangle4_disabled"><rect width="100%" height="100%" /></svg>
+<div id="Paragraph3" class="[NAB.Paragraph3_effect]" ng-style="NAB.Paragraph3_style" ng-hide="NAB.Paragraph3_hidden" ng-disabled="NAB.Paragraph3_disabled"><strong>De igual denominador<br></strong>Se restan los numeradores y se deja el mismo denominador<br></div>
+<div id="Paragraph4" class="[NAB.Paragraph4_effect]" ng-style="NAB.Paragraph4_style" ng-hide="NAB.Paragraph4_hidden" ng-disabled="NAB.Paragraph4_disabled"><strong>De distinto denominador<br></strong>Se reducen las fracciones a común denominador, luego se restan los numeradores y se deja el mismo denominador.<br></div>
+<img id="Image5" alt="" ng-src="img/resta_igual_denominador.PNG" class="[NAB.Image5_effect]" ng-style="NAB.Image5_style" ng-hide="NAB.Image5_hidden" ng-disabled="NAB.Image5_disabled">
+<img id="Image6" alt="" ng-src="img/resta_distinto_denominador.PNG" class="[NAB.Image6_effect]" ng-style="NAB.Image6_style" ng-hide="NAB.Image6_hidden" ng-disabled="NAB.Image6_disabled">
+<img id="Image7" alt="" ng-src="img/mcm_resta.PNG" class="[NAB.Image7_effect]" ng-style="NAB.Image7_style" ng-hide="NAB.Image7_hidden" ng-disabled="NAB.Image7_disabled">
+<div id="Paragraph5" class="[NAB.Paragraph5_effect]" ng-style="NAB.Paragraph5_style" ng-hide="NAB.Paragraph5_hidden" ng-disabled="NAB.Paragraph5_disabled">Simplificar el<br>resultado</div>
+<img id="Image12" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image12_effect]" ng-style="NAB.Image12_style" ng-hide="NAB.Image12_hidden" ng-disabled="NAB.Image12_disabled" ng-click="Image12_click()">
+<img id="Image21" alt="" ng-src="img/tarea.svg" class="[NAB.Image21_effect]" ng-style="NAB.Image21_style" ng-hide="NAB.Image21_hidden" ng-disabled="NAB.Image21_disabled" ng-click="Image21_click()">
+<img id="Image36" alt="" ng-src="img/resta_igual_denominador_neg.PNG" class="[NAB.Image36_effect]" ng-style="NAB.Image36_style" ng-hide="NAB.Image36_hidden" ng-disabled="NAB.Image36_disabled">
+</div>
+</script>
+<script type="text/ng-template" id="multiplicacion">
+<div id="multiplicacion">
+<h1 id="Headline4" class="[NAB.Headline4_effect]" ng-style="NAB.Headline4_style" ng-hide="NAB.Headline4_hidden" ng-disabled="NAB.Headline4_disabled">Multiplicación de&nbsp;fracciones</h1>
+<svg id="Rectangle6"  class="[NAB.Rectangle6_effect]" ng-style="NAB.Rectangle6_style" ng-hide="NAB.Rectangle6_hidden" ng-disabled="NAB.Rectangle6_disabled"><rect width="100%" height="100%" /></svg>
+<div id="Paragraph6" class="[NAB.Paragraph6_effect]" ng-style="NAB.Paragraph6_style" ng-hide="NAB.Paragraph6_hidden" ng-disabled="NAB.Paragraph6_disabled">El producto de dos o más fracciones es otra fracción cuyo numerador es el producto de los numeradores y cuyo denominador es el producto de los denominadores.<br></div>
+<div id="Paragraph7" class="[NAB.Paragraph7_effect]" ng-style="NAB.Paragraph7_style" ng-hide="NAB.Paragraph7_hidden" ng-disabled="NAB.Paragraph7_disabled">Simplificar el<br>resultado</div>
+<img id="Image13" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image13_effect]" ng-style="NAB.Image13_style" ng-hide="NAB.Image13_hidden" ng-disabled="NAB.Image13_disabled" ng-click="Image13_click()">
+<img id="Image22" alt="" ng-src="img/tarea.svg" class="[NAB.Image22_effect]" ng-style="NAB.Image22_style" ng-hide="NAB.Image22_hidden" ng-disabled="NAB.Image22_disabled" ng-click="Image22_click()">
+<img id="Image33" alt="" ng-src="img/multiplicacion.PNG" class="[NAB.Image33_effect]" ng-style="NAB.Image33_style" ng-hide="NAB.Image33_hidden" ng-disabled="NAB.Image33_disabled">
+</div>
+</script>
+<script type="text/ng-template" id="division">
+<div id="division">
+<h1 id="Headline5" class="[NAB.Headline5_effect]" ng-style="NAB.Headline5_style" ng-hide="NAB.Headline5_hidden" ng-disabled="NAB.Headline5_disabled">División de fracciones</h1>
+<svg id="Rectangle5"  class="[NAB.Rectangle5_effect]" ng-style="NAB.Rectangle5_style" ng-hide="NAB.Rectangle5_hidden" ng-disabled="NAB.Rectangle5_disabled"><rect width="100%" height="100%" /></svg>
+<div id="Paragraph8" class="[NAB.Paragraph8_effect]" ng-style="NAB.Paragraph8_style" ng-hide="NAB.Paragraph8_hidden" ng-disabled="NAB.Paragraph8_disabled"><strong>Primer método</strong><br>Para dividir una fracción por otra, se multiplica la primera fracción por la inversa de la segunda.<br></div>
+<div id="Paragraph10" class="[NAB.Paragraph10_effect]" ng-style="NAB.Paragraph10_style" ng-hide="NAB.Paragraph10_hidden" ng-disabled="NAB.Paragraph10_disabled"><strong>Segundo&nbsp;método</strong><br>Para dividir una fracción por otra, se multiplican los extremos por&nbsp;los medios o sea que se multiplican en cruz.</div>
+<img id="Image9" alt="" ng-src="img/division_invertida.PNG" class="[NAB.Image9_effect]" ng-style="NAB.Image9_style" ng-hide="NAB.Image9_hidden" ng-disabled="NAB.Image9_disabled">
+<img id="Image10" alt="" ng-src="img/division_cruzada.PNG" class="[NAB.Image10_effect]" ng-style="NAB.Image10_style" ng-hide="NAB.Image10_hidden" ng-disabled="NAB.Image10_disabled">
+<svg id="Line1" class="[NAB.Line1_effect]" ng-style="NAB.Line1_style" ng-hide="NAB.Line1_hidden" ng-disabled="NAB.Line1_disabled"><line x1="2" y1="2" x2="27" y2="29" /></svg>
+<svg id="Line2" class="[NAB.Line2_effect]" ng-style="NAB.Line2_style" ng-hide="NAB.Line2_hidden" ng-disabled="NAB.Line2_disabled"><line x1="2" y1="30" x2="24" y2="2" /></svg>
+<img id="Image14" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image14_effect]" ng-style="NAB.Image14_style" ng-hide="NAB.Image14_hidden" ng-disabled="NAB.Image14_disabled" ng-click="Image14_click()">
+<img id="Image23" alt="" ng-src="img/tarea.svg" class="[NAB.Image23_effect]" ng-style="NAB.Image23_style" ng-hide="NAB.Image23_hidden" ng-disabled="NAB.Image23_disabled" ng-click="Image23_click()">
+</div>
+</script>
+<script type="text/ng-template" id="t_suma_1">
+<div id="t_suma_1">
+<svg id="Rectangle7"  class="[NAB.Rectangle7_effect]" ng-style="NAB.Rectangle7_style" ng-hide="NAB.Rectangle7_hidden" ng-disabled="NAB.Rectangle7_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image17" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image17_effect]" ng-style="NAB.Image17_style" ng-hide="NAB.Image17_hidden" ng-disabled="NAB.Image17_disabled" ng-click="Image17_click()">
+<input id="d1" type="text" class="form-control [NAB.d1_effect]" ng-style="NAB.d1_style" ng-hide="NAB.d1_hidden" ng-disabled="NAB.d1_disabled" ng-model="$root.d1">
+<button id="comprobar" type="button"  class="btn btn-primary [NAB.comprobar_effect]" ng-style="NAB.comprobar_style" ng-hide="NAB.comprobar_hidden" ng-disabled="NAB.comprobar_disabled" ng-click="comprobar_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<input id="n1" type="text" class="form-control [NAB.n1_effect]" ng-style="NAB.n1_style" ng-hide="NAB.n1_hidden" ng-disabled="NAB.n1_disabled" ng-model="$root.n1">
+<h1 id="Headline7" class="[NAB.Headline7_effect]" ng-style="NAB.Headline7_style" ng-hide="NAB.Headline7_hidden" ng-disabled="NAB.Headline7_disabled">Realiza las siguientes sumas</h1>
+<img id="Image24" alt="" ng-src="img/tarea_suma_1.PNG" class="[NAB.Image24_effect]" ng-style="NAB.Image24_style" ng-hide="NAB.Image24_hidden" ng-disabled="NAB.Image24_disabled">
+<svg id="Line3" class="[NAB.Line3_effect]" ng-style="NAB.Line3_style" ng-hide="NAB.Line3_hidden" ng-disabled="NAB.Line3_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container2" class="[NAB.Container2_effect]" ng-style="NAB.Container2_style" ng-hide="NAB.Container2_hidden" ng-disabled="NAB.Container2_disabled">Correctas:  [cont_suma] / 5
+</div>
+<div id="Container6" class="[NAB.Container6_effect]" ng-style="NAB.Container6_style" ng-hide="NAB.Container6_hidden" ng-disabled="NAB.Container6_disabled">Nota:  [nota_suma]  puntos.
+</div>
+<div id="Container11" class="[NAB.Container11_effect]" ng-style="NAB.Container11_style" ng-hide="NAB.Container11_hidden" ng-disabled="NAB.Container11_disabled">Equivocadas: [cont_suma_e]  /  5
+</div>
+<svg id="Line10" class="[NAB.Line10_effect]" ng-style="NAB.Line10_style" ng-hide="NAB.Line10_hidden" ng-disabled="NAB.Line10_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container19" class="[NAB.Container19_effect]" ng-style="NAB.Container19_style" ng-hide="NAB.Container19_hidden" ng-disabled="NAB.Container19_disabled">[cuenta_suma]
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_suma_2">
+<div id="t_suma_2">
+<svg id="Rectangle8"  class="[NAB.Rectangle8_effect]" ng-style="NAB.Rectangle8_style" ng-hide="NAB.Rectangle8_hidden" ng-disabled="NAB.Rectangle8_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image25" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image25_effect]" ng-style="NAB.Image25_style" ng-hide="NAB.Image25_hidden" ng-disabled="NAB.Image25_disabled" ng-click="Image25_click()">
+<button id="PushButton6" type="button"  class="btn btn-primary [NAB.PushButton6_effect]" ng-style="NAB.PushButton6_style" ng-hide="NAB.PushButton6_hidden" ng-disabled="NAB.PushButton6_disabled" ng-click="PushButton6_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline8" class="[NAB.Headline8_effect]" ng-style="NAB.Headline8_style" ng-hide="NAB.Headline8_hidden" ng-disabled="NAB.Headline8_disabled">Realiza las siguientes sumas</h1>
+<img id="Image26" alt="" ng-src="img/tarea_suma_2.PNG" class="[NAB.Image26_effect]" ng-style="NAB.Image26_style" ng-hide="NAB.Image26_hidden" ng-disabled="NAB.Image26_disabled">
+<input id="d2" type="text" class="form-control [NAB.d2_effect]" ng-style="NAB.d2_style" ng-hide="NAB.d2_hidden" ng-disabled="NAB.d2_disabled" ng-model="$root.d2">
+<input id="n2" type="text" class="form-control [NAB.n2_effect]" ng-style="NAB.n2_style" ng-hide="NAB.n2_hidden" ng-disabled="NAB.n2_disabled" ng-model="$root.n2">
+<svg id="Line8" class="[NAB.Line8_effect]" ng-style="NAB.Line8_style" ng-hide="NAB.Line8_hidden" ng-disabled="NAB.Line8_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container3" class="[NAB.Container3_effect]" ng-style="NAB.Container3_style" ng-hide="NAB.Container3_hidden" ng-disabled="NAB.Container3_disabled">Correctas:  [cont_suma] / 5
+</div>
+<div id="Container7" class="[NAB.Container7_effect]" ng-style="NAB.Container7_style" ng-hide="NAB.Container7_hidden" ng-disabled="NAB.Container7_disabled">Nota:  [nota_suma]  puntos.
+</div>
+<div id="Container12" class="[NAB.Container12_effect]" ng-style="NAB.Container12_style" ng-hide="NAB.Container12_hidden" ng-disabled="NAB.Container12_disabled">Equivocadas: [cont_suma_e]  /  5
+</div>
+<svg id="Line9" class="[NAB.Line9_effect]" ng-style="NAB.Line9_style" ng-hide="NAB.Line9_hidden" ng-disabled="NAB.Line9_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container20" class="[NAB.Container20_effect]" ng-style="NAB.Container20_style" ng-hide="NAB.Container20_hidden" ng-disabled="NAB.Container20_disabled">[cuenta_suma]
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_suma_3">
+<div id="t_suma_3">
+<svg id="Rectangle9"  class="[NAB.Rectangle9_effect]" ng-style="NAB.Rectangle9_style" ng-hide="NAB.Rectangle9_hidden" ng-disabled="NAB.Rectangle9_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image27" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image27_effect]" ng-style="NAB.Image27_style" ng-hide="NAB.Image27_hidden" ng-disabled="NAB.Image27_disabled" ng-click="Image27_click()">
+<button id="PushButton8" type="button"  class="btn btn-primary [NAB.PushButton8_effect]" ng-style="NAB.PushButton8_style" ng-hide="NAB.PushButton8_hidden" ng-disabled="NAB.PushButton8_disabled" ng-click="PushButton8_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline9" class="[NAB.Headline9_effect]" ng-style="NAB.Headline9_style" ng-hide="NAB.Headline9_hidden" ng-disabled="NAB.Headline9_disabled">Realiza las siguientes sumas</h1>
+<input id="d3" type="text" class="form-control [NAB.d3_effect]" ng-style="NAB.d3_style" ng-hide="NAB.d3_hidden" ng-disabled="NAB.d3_disabled" ng-model="$root.d3">
+<input id="n3" type="text" class="form-control [NAB.n3_effect]" ng-style="NAB.n3_style" ng-hide="NAB.n3_hidden" ng-disabled="NAB.n3_disabled" ng-model="$root.n3">
+<svg id="Line4" class="[NAB.Line4_effect]" ng-style="NAB.Line4_style" ng-hide="NAB.Line4_hidden" ng-disabled="NAB.Line4_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<img id="Image30" alt="" ng-src="img/tarea_suma_3.PNG" class="[NAB.Image30_effect]" ng-style="NAB.Image30_style" ng-hide="NAB.Image30_hidden" ng-disabled="NAB.Image30_disabled">
+<div id="Container4" class="[NAB.Container4_effect]" ng-style="NAB.Container4_style" ng-hide="NAB.Container4_hidden" ng-disabled="NAB.Container4_disabled">Correctas:  [cont_suma] / 5
+</div>
+<div id="Container8" class="[NAB.Container8_effect]" ng-style="NAB.Container8_style" ng-hide="NAB.Container8_hidden" ng-disabled="NAB.Container8_disabled">Nota:  [nota_suma]  puntos.
+</div>
+<div id="Container13" class="[NAB.Container13_effect]" ng-style="NAB.Container13_style" ng-hide="NAB.Container13_hidden" ng-disabled="NAB.Container13_disabled">Equivocadas: [cont_suma_e]  /  5
+</div>
+<svg id="Line7" class="[NAB.Line7_effect]" ng-style="NAB.Line7_style" ng-hide="NAB.Line7_hidden" ng-disabled="NAB.Line7_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container21" class="[NAB.Container21_effect]" ng-style="NAB.Container21_style" ng-hide="NAB.Container21_hidden" ng-disabled="NAB.Container21_disabled">[cuenta_suma]
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_suma_4">
+<div id="t_suma_4">
+<svg id="Rectangle10"  class="[NAB.Rectangle10_effect]" ng-style="NAB.Rectangle10_style" ng-hide="NAB.Rectangle10_hidden" ng-disabled="NAB.Rectangle10_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image31" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image31_effect]" ng-style="NAB.Image31_style" ng-hide="NAB.Image31_hidden" ng-disabled="NAB.Image31_disabled" ng-click="Image31_click()">
+<button id="PushButton10" type="button"  class="btn btn-primary [NAB.PushButton10_effect]" ng-style="NAB.PushButton10_style" ng-hide="NAB.PushButton10_hidden" ng-disabled="NAB.PushButton10_disabled" ng-click="PushButton10_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline10" class="[NAB.Headline10_effect]" ng-style="NAB.Headline10_style" ng-hide="NAB.Headline10_hidden" ng-disabled="NAB.Headline10_disabled">Realiza las siguientes sumas</h1>
+<input id="d4" type="text" class="form-control [NAB.d4_effect]" ng-style="NAB.d4_style" ng-hide="NAB.d4_hidden" ng-disabled="NAB.d4_disabled" ng-model="$root.d4">
+<input id="n4" type="text" class="form-control [NAB.n4_effect]" ng-style="NAB.n4_style" ng-hide="NAB.n4_hidden" ng-disabled="NAB.n4_disabled" ng-model="$root.n4">
+<svg id="Line5" class="[NAB.Line5_effect]" ng-style="NAB.Line5_style" ng-hide="NAB.Line5_hidden" ng-disabled="NAB.Line5_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<img id="Image28" alt="" ng-src="img/tarea_suma_4.PNG" class="[NAB.Image28_effect]" ng-style="NAB.Image28_style" ng-hide="NAB.Image28_hidden" ng-disabled="NAB.Image28_disabled">
+<div id="Container5" class="[NAB.Container5_effect]" ng-style="NAB.Container5_style" ng-hide="NAB.Container5_hidden" ng-disabled="NAB.Container5_disabled">Correctas:  [cont_suma] / 5
+</div>
+<div id="Container9" class="[NAB.Container9_effect]" ng-style="NAB.Container9_style" ng-hide="NAB.Container9_hidden" ng-disabled="NAB.Container9_disabled">Nota:  [nota_suma]  puntos.
+</div>
+<div id="Container14" class="[NAB.Container14_effect]" ng-style="NAB.Container14_style" ng-hide="NAB.Container14_hidden" ng-disabled="NAB.Container14_disabled">Equivocadas: [cont_suma_e]  /  5
+</div>
+<div id="Container22" class="[NAB.Container22_effect]" ng-style="NAB.Container22_style" ng-hide="NAB.Container22_hidden" ng-disabled="NAB.Container22_disabled">[cuenta_suma]
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_suma_5">
+<div id="t_suma_5">
+<svg id="Rectangle11"  class="[NAB.Rectangle11_effect]" ng-style="NAB.Rectangle11_style" ng-hide="NAB.Rectangle11_hidden" ng-disabled="NAB.Rectangle11_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image35" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image35_effect]" ng-style="NAB.Image35_style" ng-hide="NAB.Image35_hidden" ng-disabled="NAB.Image35_disabled" ng-click="Image35_click()">
+<button id="PushButton12" type="button"  class="btn btn-primary [NAB.PushButton12_effect]" ng-style="NAB.PushButton12_style" ng-hide="NAB.PushButton12_hidden" ng-disabled="NAB.PushButton12_disabled" ng-click="PushButton12_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline11" class="[NAB.Headline11_effect]" ng-style="NAB.Headline11_style" ng-hide="NAB.Headline11_hidden" ng-disabled="NAB.Headline11_disabled">Realiza las siguientes sumas</h1>
+<input id="d5" type="text" class="form-control [NAB.d5_effect]" ng-style="NAB.d5_style" ng-hide="NAB.d5_hidden" ng-disabled="NAB.d5_disabled" ng-model="$root.d5">
+<input id="n5" type="text" class="form-control [NAB.n5_effect]" ng-style="NAB.n5_style" ng-hide="NAB.n5_hidden" ng-disabled="NAB.n5_disabled" ng-model="$root.n5">
+<img id="Image29" alt="" ng-src="img/tarea_suma_5.PNG" class="[NAB.Image29_effect]" ng-style="NAB.Image29_style" ng-hide="NAB.Image29_hidden" ng-disabled="NAB.Image29_disabled">
+<div id="Container1" class="[NAB.Container1_effect]" ng-style="NAB.Container1_style" ng-hide="NAB.Container1_hidden" ng-disabled="NAB.Container1_disabled">Correctas:  [cont_suma] / 5
+</div>
+<div id="Container10" class="[NAB.Container10_effect]" ng-style="NAB.Container10_style" ng-hide="NAB.Container10_hidden" ng-disabled="NAB.Container10_disabled">Nota:  [nota_suma]  puntos.
+</div>
+<div id="Container15" class="[NAB.Container15_effect]" ng-style="NAB.Container15_style" ng-hide="NAB.Container15_hidden" ng-disabled="NAB.Container15_disabled">Equivocadas: [cont_suma_e]  /  5
+</div>
+<svg id="Line6" class="[NAB.Line6_effect]" ng-style="NAB.Line6_style" ng-hide="NAB.Line6_hidden" ng-disabled="NAB.Line6_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container23" class="[NAB.Container23_effect]" ng-style="NAB.Container23_style" ng-hide="NAB.Container23_hidden" ng-disabled="NAB.Container23_disabled">[cuenta_suma]
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_suma_resultado">
+<div id="t_suma_resultado">
+<img id="Image32" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image32_effect]" ng-style="NAB.Image32_style" ng-hide="NAB.Image32_hidden" ng-disabled="NAB.Image32_disabled" ng-click="Image32_click()">
+<h1 id="Headline12" class="[NAB.Headline12_effect]" ng-style="NAB.Headline12_style" ng-hide="NAB.Headline12_hidden" ng-disabled="NAB.Headline12_disabled">Resultado final</h1>
+<div id="Container16" class="[NAB.Container16_effect]" ng-style="NAB.Container16_style" ng-hide="NAB.Container16_hidden" ng-disabled="NAB.Container16_disabled">Correctas:  [cont_suma] / 5
+</div>
+<div id="Container17" class="[NAB.Container17_effect]" ng-style="NAB.Container17_style" ng-hide="NAB.Container17_hidden" ng-disabled="NAB.Container17_disabled">Nota:  [nota_suma]  puntos.
+</div>
+<div id="Container18" class="[NAB.Container18_effect]" ng-style="NAB.Container18_style" ng-hide="NAB.Container18_hidden" ng-disabled="NAB.Container18_disabled">Equivocadas: [cont_suma_e]  /  5
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_resta_1">
+<div id="t_resta_1">
+<img id="Image18" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image18_effect]" ng-style="NAB.Image18_style" ng-hide="NAB.Image18_hidden" ng-disabled="NAB.Image18_disabled" ng-click="Image18_click()">
+<svg id="Rectangle12"  class="[NAB.Rectangle12_effect]" ng-style="NAB.Rectangle12_style" ng-hide="NAB.Rectangle12_hidden" ng-disabled="NAB.Rectangle12_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image8" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image8_effect]" ng-style="NAB.Image8_style" ng-hide="NAB.Image8_hidden" ng-disabled="NAB.Image8_disabled" ng-click="Image8_click()">
+<button id="PushButton9" type="button"  class="btn btn-primary [NAB.PushButton9_effect]" ng-style="NAB.PushButton9_style" ng-hide="NAB.PushButton9_hidden" ng-disabled="NAB.PushButton9_disabled" ng-click="PushButton9_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline13" class="[NAB.Headline13_effect]" ng-style="NAB.Headline13_style" ng-hide="NAB.Headline13_hidden" ng-disabled="NAB.Headline13_disabled">Realiza las siguientes restas</h1>
+<div id="Container24" class="[NAB.Container24_effect]" ng-style="NAB.Container24_style" ng-hide="NAB.Container24_hidden" ng-disabled="NAB.Container24_disabled">Correctas:  [cont_resta] / 5
+</div>
+<div id="Container25" class="[NAB.Container25_effect]" ng-style="NAB.Container25_style" ng-hide="NAB.Container25_hidden" ng-disabled="NAB.Container25_disabled">Nota:  [nota_resta]  puntos.
+</div>
+<div id="Container26" class="[NAB.Container26_effect]" ng-style="NAB.Container26_style" ng-hide="NAB.Container26_hidden" ng-disabled="NAB.Container26_disabled">Equivocadas: [cont_resta_e]  /  5
+</div>
+<div id="Container27" class="[NAB.Container27_effect]" ng-style="NAB.Container27_style" ng-hide="NAB.Container27_hidden" ng-disabled="NAB.Container27_disabled">[cuenta_resta]
+</div>
+<img id="Image37" alt="" ng-src="img/tarea_resta_1.PNG" class="[NAB.Image37_effect]" ng-style="NAB.Image37_style" ng-hide="NAB.Image37_hidden" ng-disabled="NAB.Image37_disabled">
+<input id="TextInput1" type="text" class="form-control [NAB.TextInput1_effect]" ng-style="NAB.TextInput1_style" ng-hide="NAB.TextInput1_hidden" ng-disabled="NAB.TextInput1_disabled" ng-model="$root.rd1">
+<input id="TextInput2" type="text" class="form-control [NAB.TextInput2_effect]" ng-style="NAB.TextInput2_style" ng-hide="NAB.TextInput2_hidden" ng-disabled="NAB.TextInput2_disabled" ng-model="$root.rn1">
+<svg id="Line11" class="[NAB.Line11_effect]" ng-style="NAB.Line11_style" ng-hide="NAB.Line11_hidden" ng-disabled="NAB.Line11_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_resta_2">
+<div id="t_resta_2">
+<img id="Image38" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image38_effect]" ng-style="NAB.Image38_style" ng-hide="NAB.Image38_hidden" ng-disabled="NAB.Image38_disabled" ng-click="Image38_click()">
+<svg id="Rectangle13"  class="[NAB.Rectangle13_effect]" ng-style="NAB.Rectangle13_style" ng-hide="NAB.Rectangle13_hidden" ng-disabled="NAB.Rectangle13_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image39" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image39_effect]" ng-style="NAB.Image39_style" ng-hide="NAB.Image39_hidden" ng-disabled="NAB.Image39_disabled" ng-click="Image39_click()">
+<button id="PushButton11" type="button"  class="btn btn-primary [NAB.PushButton11_effect]" ng-style="NAB.PushButton11_style" ng-hide="NAB.PushButton11_hidden" ng-disabled="NAB.PushButton11_disabled" ng-click="PushButton11_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline15" class="[NAB.Headline15_effect]" ng-style="NAB.Headline15_style" ng-hide="NAB.Headline15_hidden" ng-disabled="NAB.Headline15_disabled">Realiza las siguientes restas</h1>
+<div id="Container31" class="[NAB.Container31_effect]" ng-style="NAB.Container31_style" ng-hide="NAB.Container31_hidden" ng-disabled="NAB.Container31_disabled">Correctas:  [cont_resta] / 5
+</div>
+<div id="Container32" class="[NAB.Container32_effect]" ng-style="NAB.Container32_style" ng-hide="NAB.Container32_hidden" ng-disabled="NAB.Container32_disabled">Nota:  [nota_resta]  puntos.
+</div>
+<div id="Container33" class="[NAB.Container33_effect]" ng-style="NAB.Container33_style" ng-hide="NAB.Container33_hidden" ng-disabled="NAB.Container33_disabled">Equivocadas: [cont_resta_e]  /  5
+</div>
+<div id="Container34" class="[NAB.Container34_effect]" ng-style="NAB.Container34_style" ng-hide="NAB.Container34_hidden" ng-disabled="NAB.Container34_disabled">[cuenta_resta]
+</div>
+<input id="TextInput3" type="text" class="form-control [NAB.TextInput3_effect]" ng-style="NAB.TextInput3_style" ng-hide="NAB.TextInput3_hidden" ng-disabled="NAB.TextInput3_disabled" ng-model="$root.rd2">
+<input id="TextInput4" type="text" class="form-control [NAB.TextInput4_effect]" ng-style="NAB.TextInput4_style" ng-hide="NAB.TextInput4_hidden" ng-disabled="NAB.TextInput4_disabled" ng-model="$root.rn2">
+<img id="Image50" alt="" ng-src="img/tarea_resta_2.PNG" class="[NAB.Image50_effect]" ng-style="NAB.Image50_style" ng-hide="NAB.Image50_hidden" ng-disabled="NAB.Image50_disabled">
+<svg id="Line12" class="[NAB.Line12_effect]" ng-style="NAB.Line12_style" ng-hide="NAB.Line12_hidden" ng-disabled="NAB.Line12_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_resta_3">
+<div id="t_resta_3">
+<img id="Image41" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image41_effect]" ng-style="NAB.Image41_style" ng-hide="NAB.Image41_hidden" ng-disabled="NAB.Image41_disabled" ng-click="Image41_click()">
+<svg id="Rectangle14"  class="[NAB.Rectangle14_effect]" ng-style="NAB.Rectangle14_style" ng-hide="NAB.Rectangle14_hidden" ng-disabled="NAB.Rectangle14_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image42" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image42_effect]" ng-style="NAB.Image42_style" ng-hide="NAB.Image42_hidden" ng-disabled="NAB.Image42_disabled" ng-click="Image42_click()">
+<button id="PushButton13" type="button"  class="btn btn-primary [NAB.PushButton13_effect]" ng-style="NAB.PushButton13_style" ng-hide="NAB.PushButton13_hidden" ng-disabled="NAB.PushButton13_disabled" ng-click="PushButton13_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline16" class="[NAB.Headline16_effect]" ng-style="NAB.Headline16_style" ng-hide="NAB.Headline16_hidden" ng-disabled="NAB.Headline16_disabled">Realiza las siguientes restas</h1>
+<div id="Container35" class="[NAB.Container35_effect]" ng-style="NAB.Container35_style" ng-hide="NAB.Container35_hidden" ng-disabled="NAB.Container35_disabled">Correctas:  [cont_resta] / 5
+</div>
+<div id="Container36" class="[NAB.Container36_effect]" ng-style="NAB.Container36_style" ng-hide="NAB.Container36_hidden" ng-disabled="NAB.Container36_disabled">Nota:  [nota_resta]  puntos.
+</div>
+<div id="Container37" class="[NAB.Container37_effect]" ng-style="NAB.Container37_style" ng-hide="NAB.Container37_hidden" ng-disabled="NAB.Container37_disabled">Equivocadas: [cont_resta_e]  /  5
+</div>
+<div id="Container38" class="[NAB.Container38_effect]" ng-style="NAB.Container38_style" ng-hide="NAB.Container38_hidden" ng-disabled="NAB.Container38_disabled">[cuenta_resta]
+</div>
+<input id="TextInput5" type="text" class="form-control [NAB.TextInput5_effect]" ng-style="NAB.TextInput5_style" ng-hide="NAB.TextInput5_hidden" ng-disabled="NAB.TextInput5_disabled" ng-model="$root.rd3">
+<input id="TextInput6" type="text" class="form-control [NAB.TextInput6_effect]" ng-style="NAB.TextInput6_style" ng-hide="NAB.TextInput6_hidden" ng-disabled="NAB.TextInput6_disabled" ng-model="$root.rn3">
+<img id="Image40" alt="" ng-src="img/tarea_resta_3.PNG" class="[NAB.Image40_effect]" ng-style="NAB.Image40_style" ng-hide="NAB.Image40_hidden" ng-disabled="NAB.Image40_disabled">
+<svg id="Line13" class="[NAB.Line13_effect]" ng-style="NAB.Line13_style" ng-hide="NAB.Line13_hidden" ng-disabled="NAB.Line13_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_resta_4">
+<div id="t_resta_4">
+<img id="Image44" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image44_effect]" ng-style="NAB.Image44_style" ng-hide="NAB.Image44_hidden" ng-disabled="NAB.Image44_disabled" ng-click="Image44_click()">
+<svg id="Rectangle15"  class="[NAB.Rectangle15_effect]" ng-style="NAB.Rectangle15_style" ng-hide="NAB.Rectangle15_hidden" ng-disabled="NAB.Rectangle15_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image45" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image45_effect]" ng-style="NAB.Image45_style" ng-hide="NAB.Image45_hidden" ng-disabled="NAB.Image45_disabled" ng-click="Image45_click()">
+<button id="PushButton14" type="button"  class="btn btn-primary [NAB.PushButton14_effect]" ng-style="NAB.PushButton14_style" ng-hide="NAB.PushButton14_hidden" ng-disabled="NAB.PushButton14_disabled" ng-click="PushButton14_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline17" class="[NAB.Headline17_effect]" ng-style="NAB.Headline17_style" ng-hide="NAB.Headline17_hidden" ng-disabled="NAB.Headline17_disabled">Realiza las siguientes restas</h1>
+<div id="Container39" class="[NAB.Container39_effect]" ng-style="NAB.Container39_style" ng-hide="NAB.Container39_hidden" ng-disabled="NAB.Container39_disabled">Correctas:  [cont_resta] / 5
+</div>
+<div id="Container40" class="[NAB.Container40_effect]" ng-style="NAB.Container40_style" ng-hide="NAB.Container40_hidden" ng-disabled="NAB.Container40_disabled">Nota:  [nota_resta]  puntos.
+</div>
+<div id="Container41" class="[NAB.Container41_effect]" ng-style="NAB.Container41_style" ng-hide="NAB.Container41_hidden" ng-disabled="NAB.Container41_disabled">Equivocadas: [cont_resta_e]  /  5
+</div>
+<div id="Container42" class="[NAB.Container42_effect]" ng-style="NAB.Container42_style" ng-hide="NAB.Container42_hidden" ng-disabled="NAB.Container42_disabled">[cuenta_resta]
+</div>
+<img id="Image43" alt="" ng-src="img/tarea_resta_4.PNG" class="[NAB.Image43_effect]" ng-style="NAB.Image43_style" ng-hide="NAB.Image43_hidden" ng-disabled="NAB.Image43_disabled">
+<input id="TextInput7" type="text" class="form-control [NAB.TextInput7_effect]" ng-style="NAB.TextInput7_style" ng-hide="NAB.TextInput7_hidden" ng-disabled="NAB.TextInput7_disabled" ng-model="$root.rd4">
+<input id="TextInput8" type="text" class="form-control [NAB.TextInput8_effect]" ng-style="NAB.TextInput8_style" ng-hide="NAB.TextInput8_hidden" ng-disabled="NAB.TextInput8_disabled" ng-model="$root.rn4">
+<svg id="Line14" class="[NAB.Line14_effect]" ng-style="NAB.Line14_style" ng-hide="NAB.Line14_hidden" ng-disabled="NAB.Line14_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_resta_5">
+<div id="t_resta_5">
+<img id="Image47" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image47_effect]" ng-style="NAB.Image47_style" ng-hide="NAB.Image47_hidden" ng-disabled="NAB.Image47_disabled" ng-click="Image47_click()">
+<svg id="Rectangle16"  class="[NAB.Rectangle16_effect]" ng-style="NAB.Rectangle16_style" ng-hide="NAB.Rectangle16_hidden" ng-disabled="NAB.Rectangle16_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image48" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image48_effect]" ng-style="NAB.Image48_style" ng-hide="NAB.Image48_hidden" ng-disabled="NAB.Image48_disabled" ng-click="Image48_click()">
+<button id="PushButton15" type="button"  class="btn btn-primary [NAB.PushButton15_effect]" ng-style="NAB.PushButton15_style" ng-hide="NAB.PushButton15_hidden" ng-disabled="NAB.PushButton15_disabled" ng-click="PushButton15_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline18" class="[NAB.Headline18_effect]" ng-style="NAB.Headline18_style" ng-hide="NAB.Headline18_hidden" ng-disabled="NAB.Headline18_disabled">Realiza las siguientes restas</h1>
+<div id="Container43" class="[NAB.Container43_effect]" ng-style="NAB.Container43_style" ng-hide="NAB.Container43_hidden" ng-disabled="NAB.Container43_disabled">Correctas:  [cont_resta] / 5
+</div>
+<div id="Container44" class="[NAB.Container44_effect]" ng-style="NAB.Container44_style" ng-hide="NAB.Container44_hidden" ng-disabled="NAB.Container44_disabled">Nota:  [nota_resta]  puntos.
+</div>
+<div id="Container45" class="[NAB.Container45_effect]" ng-style="NAB.Container45_style" ng-hide="NAB.Container45_hidden" ng-disabled="NAB.Container45_disabled">Equivocadas: [cont_resta_e]  /  5
+</div>
+<div id="Container46" class="[NAB.Container46_effect]" ng-style="NAB.Container46_style" ng-hide="NAB.Container46_hidden" ng-disabled="NAB.Container46_disabled">[cuenta_resta]
+</div>
+<img id="Image46" alt="" ng-src="img/tarea_resta_5.PNG" class="[NAB.Image46_effect]" ng-style="NAB.Image46_style" ng-hide="NAB.Image46_hidden" ng-disabled="NAB.Image46_disabled">
+<input id="TextInput9" type="text" class="form-control [NAB.TextInput9_effect]" ng-style="NAB.TextInput9_style" ng-hide="NAB.TextInput9_hidden" ng-disabled="NAB.TextInput9_disabled" ng-model="$root.rd5">
+<input id="TextInput10" type="text" class="form-control [NAB.TextInput10_effect]" ng-style="NAB.TextInput10_style" ng-hide="NAB.TextInput10_hidden" ng-disabled="NAB.TextInput10_disabled" ng-model="$root.rn5">
+<svg id="Line15" class="[NAB.Line15_effect]" ng-style="NAB.Line15_style" ng-hide="NAB.Line15_hidden" ng-disabled="NAB.Line15_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_resta_resultado">
+<div id="t_resta_resultado">
+<img id="Image34" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image34_effect]" ng-style="NAB.Image34_style" ng-hide="NAB.Image34_hidden" ng-disabled="NAB.Image34_disabled" ng-click="Image34_click()">
+<h1 id="Headline14" class="[NAB.Headline14_effect]" ng-style="NAB.Headline14_style" ng-hide="NAB.Headline14_hidden" ng-disabled="NAB.Headline14_disabled">Resultado final</h1>
+<div id="Container28" class="[NAB.Container28_effect]" ng-style="NAB.Container28_style" ng-hide="NAB.Container28_hidden" ng-disabled="NAB.Container28_disabled">Correctas:  [cont_resta] / 5
+</div>
+<div id="Container29" class="[NAB.Container29_effect]" ng-style="NAB.Container29_style" ng-hide="NAB.Container29_hidden" ng-disabled="NAB.Container29_disabled">Nota:  [nota_resta]  puntos.
+</div>
+<div id="Container30" class="[NAB.Container30_effect]" ng-style="NAB.Container30_style" ng-hide="NAB.Container30_hidden" ng-disabled="NAB.Container30_disabled">Equivocadas: [cont_resta_e]  /  5
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_multiplicacion_1">
+<div id="t_multiplicacion_1">
+<img id="Image19" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image19_effect]" ng-style="NAB.Image19_style" ng-hide="NAB.Image19_hidden" ng-disabled="NAB.Image19_disabled" ng-click="Image19_click()">
+<svg id="Rectangle17"  class="[NAB.Rectangle17_effect]" ng-style="NAB.Rectangle17_style" ng-hide="NAB.Rectangle17_hidden" ng-disabled="NAB.Rectangle17_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image49" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image49_effect]" ng-style="NAB.Image49_style" ng-hide="NAB.Image49_hidden" ng-disabled="NAB.Image49_disabled" ng-click="Image49_click()">
+<button id="PushButton16" type="button"  class="btn btn-primary [NAB.PushButton16_effect]" ng-style="NAB.PushButton16_style" ng-hide="NAB.PushButton16_hidden" ng-disabled="NAB.PushButton16_disabled" ng-click="PushButton16_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline19" class="[NAB.Headline19_effect]" ng-style="NAB.Headline19_style" ng-hide="NAB.Headline19_hidden" ng-disabled="NAB.Headline19_disabled">Realiza las siguientes multiplicaciones</h1>
+<div id="Container47" class="[NAB.Container47_effect]" ng-style="NAB.Container47_style" ng-hide="NAB.Container47_hidden" ng-disabled="NAB.Container47_disabled">Correctas:  [cont_multi] / 5
+</div>
+<div id="Container48" class="[NAB.Container48_effect]" ng-style="NAB.Container48_style" ng-hide="NAB.Container48_hidden" ng-disabled="NAB.Container48_disabled">Nota:  [nota_multi]  puntos.
+</div>
+<div id="Container49" class="[NAB.Container49_effect]" ng-style="NAB.Container49_style" ng-hide="NAB.Container49_hidden" ng-disabled="NAB.Container49_disabled">Equivocadas: [cont_multi_e]  /  5
+</div>
+<div id="Container50" class="[NAB.Container50_effect]" ng-style="NAB.Container50_style" ng-hide="NAB.Container50_hidden" ng-disabled="NAB.Container50_disabled">[cuenta_multi]
+</div>
+<img id="Image65" alt="" ng-src="img/tarea_multi_1.PNG" class="[NAB.Image65_effect]" ng-style="NAB.Image65_style" ng-hide="NAB.Image65_hidden" ng-disabled="NAB.Image65_disabled">
+<input id="TextInput11" type="text" class="form-control [NAB.TextInput11_effect]" ng-style="NAB.TextInput11_style" ng-hide="NAB.TextInput11_hidden" ng-disabled="NAB.TextInput11_disabled" ng-model="$root.md1">
+<input id="TextInput12" type="text" class="form-control [NAB.TextInput12_effect]" ng-style="NAB.TextInput12_style" ng-hide="NAB.TextInput12_hidden" ng-disabled="NAB.TextInput12_disabled" ng-model="$root.mn1">
+<svg id="Line16" class="[NAB.Line16_effect]" ng-style="NAB.Line16_style" ng-hide="NAB.Line16_hidden" ng-disabled="NAB.Line16_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_multiplicacion_2">
+<div id="t_multiplicacion_2">
+<img id="Image53" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image53_effect]" ng-style="NAB.Image53_style" ng-hide="NAB.Image53_hidden" ng-disabled="NAB.Image53_disabled" ng-click="Image53_click()">
+<svg id="Rectangle18"  class="[NAB.Rectangle18_effect]" ng-style="NAB.Rectangle18_style" ng-hide="NAB.Rectangle18_hidden" ng-disabled="NAB.Rectangle18_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image54" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image54_effect]" ng-style="NAB.Image54_style" ng-hide="NAB.Image54_hidden" ng-disabled="NAB.Image54_disabled" ng-click="Image54_click()">
+<button id="PushButton17" type="button"  class="btn btn-primary [NAB.PushButton17_effect]" ng-style="NAB.PushButton17_style" ng-hide="NAB.PushButton17_hidden" ng-disabled="NAB.PushButton17_disabled" ng-click="PushButton17_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline21" class="[NAB.Headline21_effect]" ng-style="NAB.Headline21_style" ng-hide="NAB.Headline21_hidden" ng-disabled="NAB.Headline21_disabled">Realiza las siguientes multiplicaciones</h1>
+<div id="Container54" class="[NAB.Container54_effect]" ng-style="NAB.Container54_style" ng-hide="NAB.Container54_hidden" ng-disabled="NAB.Container54_disabled">Correctas:  [cont_multi] / 5
+</div>
+<div id="Container55" class="[NAB.Container55_effect]" ng-style="NAB.Container55_style" ng-hide="NAB.Container55_hidden" ng-disabled="NAB.Container55_disabled">Nota:  [nota_multi]  puntos.
+</div>
+<div id="Container56" class="[NAB.Container56_effect]" ng-style="NAB.Container56_style" ng-hide="NAB.Container56_hidden" ng-disabled="NAB.Container56_disabled">Equivocadas: [cont_multi_e]  /  5
+</div>
+<div id="Container57" class="[NAB.Container57_effect]" ng-style="NAB.Container57_style" ng-hide="NAB.Container57_hidden" ng-disabled="NAB.Container57_disabled">[cuenta_multi]
+</div>
+<img id="Image51" alt="" ng-src="img/tarea_multi_2.PNG" class="[NAB.Image51_effect]" ng-style="NAB.Image51_style" ng-hide="NAB.Image51_hidden" ng-disabled="NAB.Image51_disabled">
+<input id="TextInput13" type="text" class="form-control [NAB.TextInput13_effect]" ng-style="NAB.TextInput13_style" ng-hide="NAB.TextInput13_hidden" ng-disabled="NAB.TextInput13_disabled" ng-model="$root.md2">
+<input id="TextInput14" type="text" class="form-control [NAB.TextInput14_effect]" ng-style="NAB.TextInput14_style" ng-hide="NAB.TextInput14_hidden" ng-disabled="NAB.TextInput14_disabled" ng-model="$root.mn2">
+<svg id="Line17" class="[NAB.Line17_effect]" ng-style="NAB.Line17_style" ng-hide="NAB.Line17_hidden" ng-disabled="NAB.Line17_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_multiplicacion_3">
+<div id="t_multiplicacion_3">
+<img id="Image56" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image56_effect]" ng-style="NAB.Image56_style" ng-hide="NAB.Image56_hidden" ng-disabled="NAB.Image56_disabled" ng-click="Image56_click()">
+<svg id="Rectangle19"  class="[NAB.Rectangle19_effect]" ng-style="NAB.Rectangle19_style" ng-hide="NAB.Rectangle19_hidden" ng-disabled="NAB.Rectangle19_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image57" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image57_effect]" ng-style="NAB.Image57_style" ng-hide="NAB.Image57_hidden" ng-disabled="NAB.Image57_disabled" ng-click="Image57_click()">
+<button id="PushButton18" type="button"  class="btn btn-primary [NAB.PushButton18_effect]" ng-style="NAB.PushButton18_style" ng-hide="NAB.PushButton18_hidden" ng-disabled="NAB.PushButton18_disabled" ng-click="PushButton18_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline22" class="[NAB.Headline22_effect]" ng-style="NAB.Headline22_style" ng-hide="NAB.Headline22_hidden" ng-disabled="NAB.Headline22_disabled">Realiza las siguientes multiplicaciones</h1>
+<div id="Container58" class="[NAB.Container58_effect]" ng-style="NAB.Container58_style" ng-hide="NAB.Container58_hidden" ng-disabled="NAB.Container58_disabled">Correctas:  [cont_multi] / 5
+</div>
+<div id="Container59" class="[NAB.Container59_effect]" ng-style="NAB.Container59_style" ng-hide="NAB.Container59_hidden" ng-disabled="NAB.Container59_disabled">Nota:  [nota_multi]  puntos.
+</div>
+<div id="Container60" class="[NAB.Container60_effect]" ng-style="NAB.Container60_style" ng-hide="NAB.Container60_hidden" ng-disabled="NAB.Container60_disabled">Equivocadas: [cont_multi_e]  /  5
+</div>
+<div id="Container61" class="[NAB.Container61_effect]" ng-style="NAB.Container61_style" ng-hide="NAB.Container61_hidden" ng-disabled="NAB.Container61_disabled">[cuenta_multi]
+</div>
+<img id="Image55" alt="" ng-src="img/tarea_multi_3.PNG" class="[NAB.Image55_effect]" ng-style="NAB.Image55_style" ng-hide="NAB.Image55_hidden" ng-disabled="NAB.Image55_disabled">
+<input id="TextInput15" type="text" class="form-control [NAB.TextInput15_effect]" ng-style="NAB.TextInput15_style" ng-hide="NAB.TextInput15_hidden" ng-disabled="NAB.TextInput15_disabled" ng-model="$root.md3">
+<input id="TextInput16" type="text" class="form-control [NAB.TextInput16_effect]" ng-style="NAB.TextInput16_style" ng-hide="NAB.TextInput16_hidden" ng-disabled="NAB.TextInput16_disabled" ng-model="$root.mn3">
+<svg id="Line18" class="[NAB.Line18_effect]" ng-style="NAB.Line18_style" ng-hide="NAB.Line18_hidden" ng-disabled="NAB.Line18_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_multiplicacion_4">
+<div id="t_multiplicacion_4">
+<img id="Image59" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image59_effect]" ng-style="NAB.Image59_style" ng-hide="NAB.Image59_hidden" ng-disabled="NAB.Image59_disabled" ng-click="Image59_click()">
+<svg id="Rectangle20"  class="[NAB.Rectangle20_effect]" ng-style="NAB.Rectangle20_style" ng-hide="NAB.Rectangle20_hidden" ng-disabled="NAB.Rectangle20_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image60" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image60_effect]" ng-style="NAB.Image60_style" ng-hide="NAB.Image60_hidden" ng-disabled="NAB.Image60_disabled" ng-click="Image60_click()">
+<button id="PushButton19" type="button"  class="btn btn-primary [NAB.PushButton19_effect]" ng-style="NAB.PushButton19_style" ng-hide="NAB.PushButton19_hidden" ng-disabled="NAB.PushButton19_disabled" ng-click="PushButton19_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline23" class="[NAB.Headline23_effect]" ng-style="NAB.Headline23_style" ng-hide="NAB.Headline23_hidden" ng-disabled="NAB.Headline23_disabled">Realiza las siguientes multiplicaciones</h1>
+<div id="Container62" class="[NAB.Container62_effect]" ng-style="NAB.Container62_style" ng-hide="NAB.Container62_hidden" ng-disabled="NAB.Container62_disabled">Correctas:  [cont_multi] / 5
+</div>
+<div id="Container63" class="[NAB.Container63_effect]" ng-style="NAB.Container63_style" ng-hide="NAB.Container63_hidden" ng-disabled="NAB.Container63_disabled">Nota:  [nota_multi]  puntos.
+</div>
+<div id="Container64" class="[NAB.Container64_effect]" ng-style="NAB.Container64_style" ng-hide="NAB.Container64_hidden" ng-disabled="NAB.Container64_disabled">Equivocadas: [cont_multi_e]  /  5
+</div>
+<div id="Container65" class="[NAB.Container65_effect]" ng-style="NAB.Container65_style" ng-hide="NAB.Container65_hidden" ng-disabled="NAB.Container65_disabled">[cuenta_multi]
+</div>
+<img id="Image58" alt="" ng-src="img/tarea_multi_4.PNG" class="[NAB.Image58_effect]" ng-style="NAB.Image58_style" ng-hide="NAB.Image58_hidden" ng-disabled="NAB.Image58_disabled">
+<input id="TextInput17" type="text" class="form-control [NAB.TextInput17_effect]" ng-style="NAB.TextInput17_style" ng-hide="NAB.TextInput17_hidden" ng-disabled="NAB.TextInput17_disabled" ng-model="$root.md4">
+<input id="TextInput18" type="text" class="form-control [NAB.TextInput18_effect]" ng-style="NAB.TextInput18_style" ng-hide="NAB.TextInput18_hidden" ng-disabled="NAB.TextInput18_disabled" ng-model="$root.mn4">
+<svg id="Line19" class="[NAB.Line19_effect]" ng-style="NAB.Line19_style" ng-hide="NAB.Line19_hidden" ng-disabled="NAB.Line19_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_multiplicacion_5">
+<div id="t_multiplicacion_5">
+<img id="Image62" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image62_effect]" ng-style="NAB.Image62_style" ng-hide="NAB.Image62_hidden" ng-disabled="NAB.Image62_disabled" ng-click="Image62_click()">
+<svg id="Rectangle21"  class="[NAB.Rectangle21_effect]" ng-style="NAB.Rectangle21_style" ng-hide="NAB.Rectangle21_hidden" ng-disabled="NAB.Rectangle21_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image63" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image63_effect]" ng-style="NAB.Image63_style" ng-hide="NAB.Image63_hidden" ng-disabled="NAB.Image63_disabled" ng-click="Image63_click()">
+<button id="PushButton20" type="button"  class="btn btn-primary [NAB.PushButton20_effect]" ng-style="NAB.PushButton20_style" ng-hide="NAB.PushButton20_hidden" ng-disabled="NAB.PushButton20_disabled" ng-click="PushButton20_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline24" class="[NAB.Headline24_effect]" ng-style="NAB.Headline24_style" ng-hide="NAB.Headline24_hidden" ng-disabled="NAB.Headline24_disabled">Realiza las siguientes multiplicaciones</h1>
+<div id="Container66" class="[NAB.Container66_effect]" ng-style="NAB.Container66_style" ng-hide="NAB.Container66_hidden" ng-disabled="NAB.Container66_disabled">Correctas:  [cont_multi] / 5
+</div>
+<div id="Container67" class="[NAB.Container67_effect]" ng-style="NAB.Container67_style" ng-hide="NAB.Container67_hidden" ng-disabled="NAB.Container67_disabled">Nota:  [nota_multi]  puntos.
+</div>
+<div id="Container68" class="[NAB.Container68_effect]" ng-style="NAB.Container68_style" ng-hide="NAB.Container68_hidden" ng-disabled="NAB.Container68_disabled">Equivocadas: [cont_multi_e]  /  5
+</div>
+<div id="Container69" class="[NAB.Container69_effect]" ng-style="NAB.Container69_style" ng-hide="NAB.Container69_hidden" ng-disabled="NAB.Container69_disabled">[cuenta_multi]
+</div>
+<img id="Image61" alt="" ng-src="img/tarea_multi_5.PNG" class="[NAB.Image61_effect]" ng-style="NAB.Image61_style" ng-hide="NAB.Image61_hidden" ng-disabled="NAB.Image61_disabled">
+<input id="TextInput19" type="text" class="form-control [NAB.TextInput19_effect]" ng-style="NAB.TextInput19_style" ng-hide="NAB.TextInput19_hidden" ng-disabled="NAB.TextInput19_disabled" ng-model="$root.md5">
+<input id="TextInput20" type="text" class="form-control [NAB.TextInput20_effect]" ng-style="NAB.TextInput20_style" ng-hide="NAB.TextInput20_hidden" ng-disabled="NAB.TextInput20_disabled" ng-model="$root.mn5">
+<svg id="Line20" class="[NAB.Line20_effect]" ng-style="NAB.Line20_style" ng-hide="NAB.Line20_hidden" ng-disabled="NAB.Line20_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_multiplicacion_resultado">
+<div id="t_multiplicacion_resultado">
+<img id="Image52" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image52_effect]" ng-style="NAB.Image52_style" ng-hide="NAB.Image52_hidden" ng-disabled="NAB.Image52_disabled" ng-click="Image52_click()">
+<h1 id="Headline20" class="[NAB.Headline20_effect]" ng-style="NAB.Headline20_style" ng-hide="NAB.Headline20_hidden" ng-disabled="NAB.Headline20_disabled">Resultado final</h1>
+<div id="Container51" class="[NAB.Container51_effect]" ng-style="NAB.Container51_style" ng-hide="NAB.Container51_hidden" ng-disabled="NAB.Container51_disabled">Correctas:  [cont_multi] / 5
+</div>
+<div id="Container52" class="[NAB.Container52_effect]" ng-style="NAB.Container52_style" ng-hide="NAB.Container52_hidden" ng-disabled="NAB.Container52_disabled">Nota:  [nota_multi]  puntos.
+</div>
+<div id="Container53" class="[NAB.Container53_effect]" ng-style="NAB.Container53_style" ng-hide="NAB.Container53_hidden" ng-disabled="NAB.Container53_disabled">Equivocadas: [cont_multi_e]  /  5
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_division_1">
+<div id="t_division_1">
+<img id="Image20" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image20_effect]" ng-style="NAB.Image20_style" ng-hide="NAB.Image20_hidden" ng-disabled="NAB.Image20_disabled" ng-click="Image20_click()">
+<svg id="Rectangle22"  class="[NAB.Rectangle22_effect]" ng-style="NAB.Rectangle22_style" ng-hide="NAB.Rectangle22_hidden" ng-disabled="NAB.Rectangle22_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image64" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image64_effect]" ng-style="NAB.Image64_style" ng-hide="NAB.Image64_hidden" ng-disabled="NAB.Image64_disabled" ng-click="Image64_click()">
+<button id="PushButton21" type="button"  class="btn btn-primary [NAB.PushButton21_effect]" ng-style="NAB.PushButton21_style" ng-hide="NAB.PushButton21_hidden" ng-disabled="NAB.PushButton21_disabled" ng-click="PushButton21_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<div id="Container70" class="[NAB.Container70_effect]" ng-style="NAB.Container70_style" ng-hide="NAB.Container70_hidden" ng-disabled="NAB.Container70_disabled">Correctas:  [cont_divi] / 5
+</div>
+<div id="Container71" class="[NAB.Container71_effect]" ng-style="NAB.Container71_style" ng-hide="NAB.Container71_hidden" ng-disabled="NAB.Container71_disabled">Nota:  [nota_divi]  puntos.
+</div>
+<div id="Container72" class="[NAB.Container72_effect]" ng-style="NAB.Container72_style" ng-hide="NAB.Container72_hidden" ng-disabled="NAB.Container72_disabled">Equivocadas: [cont_divi_e]  /  5
+</div>
+<img id="Image66" alt="" ng-src="img/tarea_multi_1.PNG" class="[NAB.Image66_effect]" ng-style="NAB.Image66_style" ng-hide="NAB.Image66_hidden" ng-disabled="NAB.Image66_disabled">
+<input id="TextInput21" type="text" class="form-control [NAB.TextInput21_effect]" ng-style="NAB.TextInput21_style" ng-hide="NAB.TextInput21_hidden" ng-disabled="NAB.TextInput21_disabled" ng-model="$root.dd1">
+<input id="TextInput22" type="text" class="form-control [NAB.TextInput22_effect]" ng-style="NAB.TextInput22_style" ng-hide="NAB.TextInput22_hidden" ng-disabled="NAB.TextInput22_disabled" ng-model="$root.dn1">
+<svg id="Line21" class="[NAB.Line21_effect]" ng-style="NAB.Line21_style" ng-hide="NAB.Line21_hidden" ng-disabled="NAB.Line21_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container73" class="[NAB.Container73_effect]" ng-style="NAB.Container73_style" ng-hide="NAB.Container73_hidden" ng-disabled="NAB.Container73_disabled">[cuenta_divi]
+</div>
+<h1 id="Headline25" class="[NAB.Headline25_effect]" ng-style="NAB.Headline25_style" ng-hide="NAB.Headline25_hidden" ng-disabled="NAB.Headline25_disabled">Realiza las siguientes divisiones</h1>
+</div>
+</script>
+<script type="text/ng-template" id="t_division_2">
+<div id="t_division_2">
+<img id="Image68" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image68_effect]" ng-style="NAB.Image68_style" ng-hide="NAB.Image68_hidden" ng-disabled="NAB.Image68_disabled" ng-click="Image68_click()">
+<svg id="Rectangle23"  class="[NAB.Rectangle23_effect]" ng-style="NAB.Rectangle23_style" ng-hide="NAB.Rectangle23_hidden" ng-disabled="NAB.Rectangle23_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image69" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image69_effect]" ng-style="NAB.Image69_style" ng-hide="NAB.Image69_hidden" ng-disabled="NAB.Image69_disabled" ng-click="Image69_click()">
+<button id="PushButton22" type="button"  class="btn btn-primary [NAB.PushButton22_effect]" ng-style="NAB.PushButton22_style" ng-hide="NAB.PushButton22_hidden" ng-disabled="NAB.PushButton22_disabled" ng-click="PushButton22_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline27" class="[NAB.Headline27_effect]" ng-style="NAB.Headline27_style" ng-hide="NAB.Headline27_hidden" ng-disabled="NAB.Headline27_disabled">Realiza las siguientes multiplicaciones</h1>
+<div id="Container77" class="[NAB.Container77_effect]" ng-style="NAB.Container77_style" ng-hide="NAB.Container77_hidden" ng-disabled="NAB.Container77_disabled">Correctas:  [cont_divi] / 5
+</div>
+<div id="Container78" class="[NAB.Container78_effect]" ng-style="NAB.Container78_style" ng-hide="NAB.Container78_hidden" ng-disabled="NAB.Container78_disabled">Nota:  [nota_divi]  puntos.
+</div>
+<div id="Container79" class="[NAB.Container79_effect]" ng-style="NAB.Container79_style" ng-hide="NAB.Container79_hidden" ng-disabled="NAB.Container79_disabled">Equivocadas: [cont_divi_e]  /  5
+</div>
+<img id="Image70" alt="" ng-src="img/tarea_multi_1.PNG" class="[NAB.Image70_effect]" ng-style="NAB.Image70_style" ng-hide="NAB.Image70_hidden" ng-disabled="NAB.Image70_disabled">
+<input id="TextInput23" type="text" class="form-control [NAB.TextInput23_effect]" ng-style="NAB.TextInput23_style" ng-hide="NAB.TextInput23_hidden" ng-disabled="NAB.TextInput23_disabled" ng-model="$root.dd2">
+<input id="TextInput24" type="text" class="form-control [NAB.TextInput24_effect]" ng-style="NAB.TextInput24_style" ng-hide="NAB.TextInput24_hidden" ng-disabled="NAB.TextInput24_disabled" ng-model="$root.dn2">
+<svg id="Line22" class="[NAB.Line22_effect]" ng-style="NAB.Line22_style" ng-hide="NAB.Line22_hidden" ng-disabled="NAB.Line22_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container80" class="[NAB.Container80_effect]" ng-style="NAB.Container80_style" ng-hide="NAB.Container80_hidden" ng-disabled="NAB.Container80_disabled">[cuenta_divi]
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_division_3">
+<div id="t_division_3">
+<img id="Image71" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image71_effect]" ng-style="NAB.Image71_style" ng-hide="NAB.Image71_hidden" ng-disabled="NAB.Image71_disabled" ng-click="Image71_click()">
+<svg id="Rectangle24"  class="[NAB.Rectangle24_effect]" ng-style="NAB.Rectangle24_style" ng-hide="NAB.Rectangle24_hidden" ng-disabled="NAB.Rectangle24_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image72" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image72_effect]" ng-style="NAB.Image72_style" ng-hide="NAB.Image72_hidden" ng-disabled="NAB.Image72_disabled" ng-click="Image72_click()">
+<button id="PushButton23" type="button"  class="btn btn-primary [NAB.PushButton23_effect]" ng-style="NAB.PushButton23_style" ng-hide="NAB.PushButton23_hidden" ng-disabled="NAB.PushButton23_disabled" ng-click="PushButton23_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline28" class="[NAB.Headline28_effect]" ng-style="NAB.Headline28_style" ng-hide="NAB.Headline28_hidden" ng-disabled="NAB.Headline28_disabled">Realiza las siguientes multiplicaciones</h1>
+<div id="Container81" class="[NAB.Container81_effect]" ng-style="NAB.Container81_style" ng-hide="NAB.Container81_hidden" ng-disabled="NAB.Container81_disabled">Correctas:  [cont_divi] / 5
+</div>
+<div id="Container82" class="[NAB.Container82_effect]" ng-style="NAB.Container82_style" ng-hide="NAB.Container82_hidden" ng-disabled="NAB.Container82_disabled">Nota:  [nota_divi]  puntos.
+</div>
+<div id="Container83" class="[NAB.Container83_effect]" ng-style="NAB.Container83_style" ng-hide="NAB.Container83_hidden" ng-disabled="NAB.Container83_disabled">Equivocadas: [cont_divi_e]  /  5
+</div>
+<img id="Image73" alt="" ng-src="img/tarea_multi_1.PNG" class="[NAB.Image73_effect]" ng-style="NAB.Image73_style" ng-hide="NAB.Image73_hidden" ng-disabled="NAB.Image73_disabled">
+<input id="TextInput25" type="text" class="form-control [NAB.TextInput25_effect]" ng-style="NAB.TextInput25_style" ng-hide="NAB.TextInput25_hidden" ng-disabled="NAB.TextInput25_disabled" ng-model="$root.dd3">
+<input id="TextInput26" type="text" class="form-control [NAB.TextInput26_effect]" ng-style="NAB.TextInput26_style" ng-hide="NAB.TextInput26_hidden" ng-disabled="NAB.TextInput26_disabled" ng-model="$root.dn3">
+<svg id="Line23" class="[NAB.Line23_effect]" ng-style="NAB.Line23_style" ng-hide="NAB.Line23_hidden" ng-disabled="NAB.Line23_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container84" class="[NAB.Container84_effect]" ng-style="NAB.Container84_style" ng-hide="NAB.Container84_hidden" ng-disabled="NAB.Container84_disabled">[cuenta_divi]
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_division_4">
+<div id="t_division_4">
+<img id="Image74" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image74_effect]" ng-style="NAB.Image74_style" ng-hide="NAB.Image74_hidden" ng-disabled="NAB.Image74_disabled" ng-click="Image74_click()">
+<svg id="Rectangle25"  class="[NAB.Rectangle25_effect]" ng-style="NAB.Rectangle25_style" ng-hide="NAB.Rectangle25_hidden" ng-disabled="NAB.Rectangle25_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image75" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image75_effect]" ng-style="NAB.Image75_style" ng-hide="NAB.Image75_hidden" ng-disabled="NAB.Image75_disabled" ng-click="Image75_click()">
+<button id="PushButton24" type="button"  class="btn btn-primary [NAB.PushButton24_effect]" ng-style="NAB.PushButton24_style" ng-hide="NAB.PushButton24_hidden" ng-disabled="NAB.PushButton24_disabled" ng-click="PushButton24_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline29" class="[NAB.Headline29_effect]" ng-style="NAB.Headline29_style" ng-hide="NAB.Headline29_hidden" ng-disabled="NAB.Headline29_disabled">Realiza las siguientes multiplicaciones</h1>
+<div id="Container85" class="[NAB.Container85_effect]" ng-style="NAB.Container85_style" ng-hide="NAB.Container85_hidden" ng-disabled="NAB.Container85_disabled">Correctas:  [cont_divi] / 5
+</div>
+<div id="Container86" class="[NAB.Container86_effect]" ng-style="NAB.Container86_style" ng-hide="NAB.Container86_hidden" ng-disabled="NAB.Container86_disabled">Nota:  [nota_divi]  puntos.
+</div>
+<div id="Container87" class="[NAB.Container87_effect]" ng-style="NAB.Container87_style" ng-hide="NAB.Container87_hidden" ng-disabled="NAB.Container87_disabled">Equivocadas: [cont_divi_e]  /  5
+</div>
+<img id="Image76" alt="" ng-src="img/tarea_multi_1.PNG" class="[NAB.Image76_effect]" ng-style="NAB.Image76_style" ng-hide="NAB.Image76_hidden" ng-disabled="NAB.Image76_disabled">
+<input id="TextInput27" type="text" class="form-control [NAB.TextInput27_effect]" ng-style="NAB.TextInput27_style" ng-hide="NAB.TextInput27_hidden" ng-disabled="NAB.TextInput27_disabled" ng-model="$root.dd4">
+<input id="TextInput28" type="text" class="form-control [NAB.TextInput28_effect]" ng-style="NAB.TextInput28_style" ng-hide="NAB.TextInput28_hidden" ng-disabled="NAB.TextInput28_disabled" ng-model="$root.dn4">
+<svg id="Line24" class="[NAB.Line24_effect]" ng-style="NAB.Line24_style" ng-hide="NAB.Line24_hidden" ng-disabled="NAB.Line24_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container88" class="[NAB.Container88_effect]" ng-style="NAB.Container88_style" ng-hide="NAB.Container88_hidden" ng-disabled="NAB.Container88_disabled">[cuenta_divi]
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_division_5">
+<div id="t_division_5">
+<img id="Image77" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image77_effect]" ng-style="NAB.Image77_style" ng-hide="NAB.Image77_hidden" ng-disabled="NAB.Image77_disabled" ng-click="Image77_click()">
+<svg id="Rectangle26"  class="[NAB.Rectangle26_effect]" ng-style="NAB.Rectangle26_style" ng-hide="NAB.Rectangle26_hidden" ng-disabled="NAB.Rectangle26_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image78" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image78_effect]" ng-style="NAB.Image78_style" ng-hide="NAB.Image78_hidden" ng-disabled="NAB.Image78_disabled" ng-click="Image78_click()">
+<button id="PushButton25" type="button"  class="btn btn-primary [NAB.PushButton25_effect]" ng-style="NAB.PushButton25_style" ng-hide="NAB.PushButton25_hidden" ng-disabled="NAB.PushButton25_disabled" ng-click="PushButton25_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline30" class="[NAB.Headline30_effect]" ng-style="NAB.Headline30_style" ng-hide="NAB.Headline30_hidden" ng-disabled="NAB.Headline30_disabled">Realiza las siguientes multiplicaciones</h1>
+<div id="Container89" class="[NAB.Container89_effect]" ng-style="NAB.Container89_style" ng-hide="NAB.Container89_hidden" ng-disabled="NAB.Container89_disabled">Correctas:  [cont_divi] / 5
+</div>
+<div id="Container90" class="[NAB.Container90_effect]" ng-style="NAB.Container90_style" ng-hide="NAB.Container90_hidden" ng-disabled="NAB.Container90_disabled">Nota:  [nota_divi]  puntos.
+</div>
+<div id="Container91" class="[NAB.Container91_effect]" ng-style="NAB.Container91_style" ng-hide="NAB.Container91_hidden" ng-disabled="NAB.Container91_disabled">Equivocadas: [cont_divi_e]  /  5
+</div>
+<img id="Image79" alt="" ng-src="img/tarea_multi_1.PNG" class="[NAB.Image79_effect]" ng-style="NAB.Image79_style" ng-hide="NAB.Image79_hidden" ng-disabled="NAB.Image79_disabled">
+<input id="TextInput29" type="text" class="form-control [NAB.TextInput29_effect]" ng-style="NAB.TextInput29_style" ng-hide="NAB.TextInput29_hidden" ng-disabled="NAB.TextInput29_disabled" ng-model="$root.dd5">
+<input id="TextInput30" type="text" class="form-control [NAB.TextInput30_effect]" ng-style="NAB.TextInput30_style" ng-hide="NAB.TextInput30_hidden" ng-disabled="NAB.TextInput30_disabled" ng-model="$root.dn5">
+<svg id="Line25" class="[NAB.Line25_effect]" ng-style="NAB.Line25_style" ng-hide="NAB.Line25_hidden" ng-disabled="NAB.Line25_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container92" class="[NAB.Container92_effect]" ng-style="NAB.Container92_style" ng-hide="NAB.Container92_hidden" ng-disabled="NAB.Container92_disabled">[cuenta_divi]
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_division_resultado">
+<div id="t_division_resultado">
+<img id="Image67" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image67_effect]" ng-style="NAB.Image67_style" ng-hide="NAB.Image67_hidden" ng-disabled="NAB.Image67_disabled" ng-click="Image67_click()">
+<h1 id="Headline26" class="[NAB.Headline26_effect]" ng-style="NAB.Headline26_style" ng-hide="NAB.Headline26_hidden" ng-disabled="NAB.Headline26_disabled">Resultado final</h1>
+<div id="Container74" class="[NAB.Container74_effect]" ng-style="NAB.Container74_style" ng-hide="NAB.Container74_hidden" ng-disabled="NAB.Container74_disabled">Correctas:  [cont_divi] / 5
+</div>
+<div id="Container75" class="[NAB.Container75_effect]" ng-style="NAB.Container75_style" ng-hide="NAB.Container75_hidden" ng-disabled="NAB.Container75_disabled">Nota:  [nota_divi]  puntos.
+</div>
+<div id="Container76" class="[NAB.Container76_effect]" ng-style="NAB.Container76_style" ng-hide="NAB.Container76_hidden" ng-disabled="NAB.Container76_disabled">Equivocadas: [cont_divi_e]  /  5
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="t_combi_1">
+<div id="t_combi_1">
+<img id="Image88" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image88_effect]" ng-style="NAB.Image88_style" ng-hide="NAB.Image88_hidden" ng-disabled="NAB.Image88_disabled" ng-click="Image88_click()">
+<svg id="Rectangle27"  class="[NAB.Rectangle27_effect]" ng-style="NAB.Rectangle27_style" ng-hide="NAB.Rectangle27_hidden" ng-disabled="NAB.Rectangle27_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image89" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image89_effect]" ng-style="NAB.Image89_style" ng-hide="NAB.Image89_hidden" ng-disabled="NAB.Image89_disabled" ng-click="Image89_click()">
+<button id="PushButton1" type="button"  class="btn btn-primary [NAB.PushButton1_effect]" ng-style="NAB.PushButton1_style" ng-hide="NAB.PushButton1_hidden" ng-disabled="NAB.PushButton1_disabled" ng-click="PushButton1_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<div id="Container93" class="[NAB.Container93_effect]" ng-style="NAB.Container93_style" ng-hide="NAB.Container93_hidden" ng-disabled="NAB.Container93_disabled">Correctas:  [cont_combi] / 5
+</div>
+<div id="Container94" class="[NAB.Container94_effect]" ng-style="NAB.Container94_style" ng-hide="NAB.Container94_hidden" ng-disabled="NAB.Container94_disabled">Nota:  [nota_combi]  puntos.
+</div>
+<div id="Container95" class="[NAB.Container95_effect]" ng-style="NAB.Container95_style" ng-hide="NAB.Container95_hidden" ng-disabled="NAB.Container95_disabled">Equivocadas: [cont_combi_e]  /  5
+</div>
+<input id="TextInput31" type="text" class="form-control [NAB.TextInput31_effect]" ng-style="NAB.TextInput31_style" ng-hide="NAB.TextInput31_hidden" ng-disabled="NAB.TextInput31_disabled" ng-model="$root.cd1">
+<input id="TextInput32" type="text" class="form-control [NAB.TextInput32_effect]" ng-style="NAB.TextInput32_style" ng-hide="NAB.TextInput32_hidden" ng-disabled="NAB.TextInput32_disabled" ng-model="$root.cn1">
+<div id="Container96" class="[NAB.Container96_effect]" ng-style="NAB.Container96_style" ng-hide="NAB.Container96_hidden" ng-disabled="NAB.Container96_disabled">[cuenta_combi]
+</div>
+<h1 id="Headline37" class="[NAB.Headline37_effect]" ng-style="NAB.Headline37_style" ng-hide="NAB.Headline37_hidden" ng-disabled="NAB.Headline37_disabled">Cálculos combinados</h1>
+<img id="Image104" alt="" ng-src="img/tarea_combi_1.PNG" class="[NAB.Image104_effect]" ng-style="NAB.Image104_style" ng-hide="NAB.Image104_hidden" ng-disabled="NAB.Image104_disabled">
+<svg id="Line26" class="[NAB.Line26_effect]" ng-style="NAB.Line26_style" ng-hide="NAB.Line26_hidden" ng-disabled="NAB.Line26_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_combi_2">
+<div id="t_combi_2">
+<img id="Image91" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image91_effect]" ng-style="NAB.Image91_style" ng-hide="NAB.Image91_hidden" ng-disabled="NAB.Image91_disabled" ng-click="Image91_click()">
+<svg id="Rectangle28"  class="[NAB.Rectangle28_effect]" ng-style="NAB.Rectangle28_style" ng-hide="NAB.Rectangle28_hidden" ng-disabled="NAB.Rectangle28_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image92" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image92_effect]" ng-style="NAB.Image92_style" ng-hide="NAB.Image92_hidden" ng-disabled="NAB.Image92_disabled" ng-click="Image92_click()">
+<button id="PushButton2" type="button"  class="btn btn-primary [NAB.PushButton2_effect]" ng-style="NAB.PushButton2_style" ng-hide="NAB.PushButton2_hidden" ng-disabled="NAB.PushButton2_disabled" ng-click="PushButton2_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline38" class="[NAB.Headline38_effect]" ng-style="NAB.Headline38_style" ng-hide="NAB.Headline38_hidden" ng-disabled="NAB.Headline38_disabled">Realiza las siguientes divisiones</h1>
+<div id="Container97" class="[NAB.Container97_effect]" ng-style="NAB.Container97_style" ng-hide="NAB.Container97_hidden" ng-disabled="NAB.Container97_disabled">Correctas:  [cont_combi] / 5
+</div>
+<div id="Container98" class="[NAB.Container98_effect]" ng-style="NAB.Container98_style" ng-hide="NAB.Container98_hidden" ng-disabled="NAB.Container98_disabled">Nota:  [nota_combi]  puntos.
+</div>
+<div id="Container99" class="[NAB.Container99_effect]" ng-style="NAB.Container99_style" ng-hide="NAB.Container99_hidden" ng-disabled="NAB.Container99_disabled">Equivocadas: [cont_combi_e]  /  5
+</div>
+<div id="Container100" class="[NAB.Container100_effect]" ng-style="NAB.Container100_style" ng-hide="NAB.Container100_hidden" ng-disabled="NAB.Container100_disabled">[cuenta_combi]
+</div>
+<img id="Image90" alt="" ng-src="img/tarea_combi_2.PNG" class="[NAB.Image90_effect]" ng-style="NAB.Image90_style" ng-hide="NAB.Image90_hidden" ng-disabled="NAB.Image90_disabled">
+<input id="TextInput33" type="text" class="form-control [NAB.TextInput33_effect]" ng-style="NAB.TextInput33_style" ng-hide="NAB.TextInput33_hidden" ng-disabled="NAB.TextInput33_disabled" ng-model="$root.cd2">
+<input id="TextInput34" type="text" class="form-control [NAB.TextInput34_effect]" ng-style="NAB.TextInput34_style" ng-hide="NAB.TextInput34_hidden" ng-disabled="NAB.TextInput34_disabled" ng-model="$root.cn2">
+<svg id="Line27" class="[NAB.Line27_effect]" ng-style="NAB.Line27_style" ng-hide="NAB.Line27_hidden" ng-disabled="NAB.Line27_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_combi_3">
+<div id="t_combi_3">
+<img id="Image94" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image94_effect]" ng-style="NAB.Image94_style" ng-hide="NAB.Image94_hidden" ng-disabled="NAB.Image94_disabled" ng-click="Image94_click()">
+<svg id="Rectangle29"  class="[NAB.Rectangle29_effect]" ng-style="NAB.Rectangle29_style" ng-hide="NAB.Rectangle29_hidden" ng-disabled="NAB.Rectangle29_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image95" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image95_effect]" ng-style="NAB.Image95_style" ng-hide="NAB.Image95_hidden" ng-disabled="NAB.Image95_disabled" ng-click="Image95_click()">
+<button id="PushButton3" type="button"  class="btn btn-primary [NAB.PushButton3_effect]" ng-style="NAB.PushButton3_style" ng-hide="NAB.PushButton3_hidden" ng-disabled="NAB.PushButton3_disabled" ng-click="PushButton3_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline39" class="[NAB.Headline39_effect]" ng-style="NAB.Headline39_style" ng-hide="NAB.Headline39_hidden" ng-disabled="NAB.Headline39_disabled">Realiza las siguientes divisiones</h1>
+<div id="Container101" class="[NAB.Container101_effect]" ng-style="NAB.Container101_style" ng-hide="NAB.Container101_hidden" ng-disabled="NAB.Container101_disabled">Correctas:  [cont_combi] / 5
+</div>
+<div id="Container102" class="[NAB.Container102_effect]" ng-style="NAB.Container102_style" ng-hide="NAB.Container102_hidden" ng-disabled="NAB.Container102_disabled">Nota:  [nota_combi]  puntos.
+</div>
+<div id="Container103" class="[NAB.Container103_effect]" ng-style="NAB.Container103_style" ng-hide="NAB.Container103_hidden" ng-disabled="NAB.Container103_disabled">Equivocadas: [cont_combi_e]  /  5
+</div>
+<div id="Container104" class="[NAB.Container104_effect]" ng-style="NAB.Container104_style" ng-hide="NAB.Container104_hidden" ng-disabled="NAB.Container104_disabled">[cuenta_combi]
+</div>
+<img id="Image93" alt="" ng-src="img/tarea_combi_3.PNG" class="[NAB.Image93_effect]" ng-style="NAB.Image93_style" ng-hide="NAB.Image93_hidden" ng-disabled="NAB.Image93_disabled">
+<input id="TextInput36" type="text" class="form-control [NAB.TextInput36_effect]" ng-style="NAB.TextInput36_style" ng-hide="NAB.TextInput36_hidden" ng-disabled="NAB.TextInput36_disabled" ng-model="$root.cn3">
+<input id="TextInput35" type="text" class="form-control [NAB.TextInput35_effect]" ng-style="NAB.TextInput35_style" ng-hide="NAB.TextInput35_hidden" ng-disabled="NAB.TextInput35_disabled" ng-model="$root.cd3">
+<svg id="Line28" class="[NAB.Line28_effect]" ng-style="NAB.Line28_style" ng-hide="NAB.Line28_hidden" ng-disabled="NAB.Line28_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+</div>
+</script>
+<script type="text/ng-template" id="t_combi_4">
+<div id="t_combi_4">
+<img id="Image97" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image97_effect]" ng-style="NAB.Image97_style" ng-hide="NAB.Image97_hidden" ng-disabled="NAB.Image97_disabled" ng-click="Image97_click()">
+<svg id="Rectangle30"  class="[NAB.Rectangle30_effect]" ng-style="NAB.Rectangle30_style" ng-hide="NAB.Rectangle30_hidden" ng-disabled="NAB.Rectangle30_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image98" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image98_effect]" ng-style="NAB.Image98_style" ng-hide="NAB.Image98_hidden" ng-disabled="NAB.Image98_disabled" ng-click="Image98_click()">
+<button id="PushButton4" type="button"  class="btn btn-primary [NAB.PushButton4_effect]" ng-style="NAB.PushButton4_style" ng-hide="NAB.PushButton4_hidden" ng-disabled="NAB.PushButton4_disabled" ng-click="PushButton4_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline40" class="[NAB.Headline40_effect]" ng-style="NAB.Headline40_style" ng-hide="NAB.Headline40_hidden" ng-disabled="NAB.Headline40_disabled">Realiza las siguientes divisiones</h1>
+<div id="Container105" class="[NAB.Container105_effect]" ng-style="NAB.Container105_style" ng-hide="NAB.Container105_hidden" ng-disabled="NAB.Container105_disabled">Correctas:  [cont_combi] / 5
+</div>
+<div id="Container106" class="[NAB.Container106_effect]" ng-style="NAB.Container106_style" ng-hide="NAB.Container106_hidden" ng-disabled="NAB.Container106_disabled">Nota:  [nota_combi]  puntos.
+</div>
+<div id="Container107" class="[NAB.Container107_effect]" ng-style="NAB.Container107_style" ng-hide="NAB.Container107_hidden" ng-disabled="NAB.Container107_disabled">Equivocadas: [cont_combi_e]  /  5
+</div>
+<input id="TextInput37" type="text" class="form-control [NAB.TextInput37_effect]" ng-style="NAB.TextInput37_style" ng-hide="NAB.TextInput37_hidden" ng-disabled="NAB.TextInput37_disabled" ng-model="$root.cd4">
+<input id="TextInput38" type="text" class="form-control [NAB.TextInput38_effect]" ng-style="NAB.TextInput38_style" ng-hide="NAB.TextInput38_hidden" ng-disabled="NAB.TextInput38_disabled" ng-model="$root.cn4">
+<svg id="Line29" class="[NAB.Line29_effect]" ng-style="NAB.Line29_style" ng-hide="NAB.Line29_hidden" ng-disabled="NAB.Line29_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container108" class="[NAB.Container108_effect]" ng-style="NAB.Container108_style" ng-hide="NAB.Container108_hidden" ng-disabled="NAB.Container108_disabled">[cuenta_combi]
+</div>
+<img id="Image96" alt="" ng-src="img/tarea_combi_4.PNG" class="[NAB.Image96_effect]" ng-style="NAB.Image96_style" ng-hide="NAB.Image96_hidden" ng-disabled="NAB.Image96_disabled">
+</div>
+</script>
+<script type="text/ng-template" id="t_combi_5">
+<div id="t_combi_5">
+<img id="Image100" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image100_effect]" ng-style="NAB.Image100_style" ng-hide="NAB.Image100_hidden" ng-disabled="NAB.Image100_disabled" ng-click="Image100_click()">
+<svg id="Rectangle31"  class="[NAB.Rectangle31_effect]" ng-style="NAB.Rectangle31_style" ng-hide="NAB.Rectangle31_hidden" ng-disabled="NAB.Rectangle31_disabled"><rect width="100%" height="100%" /></svg>
+<img id="Image101" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image101_effect]" ng-style="NAB.Image101_style" ng-hide="NAB.Image101_hidden" ng-disabled="NAB.Image101_disabled" ng-click="Image101_click()">
+<button id="PushButton5" type="button"  class="btn btn-primary [NAB.PushButton5_effect]" ng-style="NAB.PushButton5_style" ng-hide="NAB.PushButton5_hidden" ng-disabled="NAB.PushButton5_disabled" ng-click="PushButton5_click()"><span class="glyphicon glyphicon-hand-up"></span> <br></button>
+<h1 id="Headline41" class="[NAB.Headline41_effect]" ng-style="NAB.Headline41_style" ng-hide="NAB.Headline41_hidden" ng-disabled="NAB.Headline41_disabled">Realiza las siguientes divisiones</h1>
+<div id="Container109" class="[NAB.Container109_effect]" ng-style="NAB.Container109_style" ng-hide="NAB.Container109_hidden" ng-disabled="NAB.Container109_disabled">Correctas:  [cont_combi] / 5
+</div>
+<div id="Container110" class="[NAB.Container110_effect]" ng-style="NAB.Container110_style" ng-hide="NAB.Container110_hidden" ng-disabled="NAB.Container110_disabled">Nota:  [nota_combi]  puntos.
+</div>
+<div id="Container111" class="[NAB.Container111_effect]" ng-style="NAB.Container111_style" ng-hide="NAB.Container111_hidden" ng-disabled="NAB.Container111_disabled">Equivocadas: [cont_combi_e]  /  5
+</div>
+<input id="TextInput39" type="text" class="form-control [NAB.TextInput39_effect]" ng-style="NAB.TextInput39_style" ng-hide="NAB.TextInput39_hidden" ng-disabled="NAB.TextInput39_disabled" ng-model="$root.cd5">
+<input id="TextInput40" type="text" class="form-control [NAB.TextInput40_effect]" ng-style="NAB.TextInput40_style" ng-hide="NAB.TextInput40_hidden" ng-disabled="NAB.TextInput40_disabled" ng-model="$root.cn5">
+<svg id="Line30" class="[NAB.Line30_effect]" ng-style="NAB.Line30_style" ng-hide="NAB.Line30_hidden" ng-disabled="NAB.Line30_disabled"><line x1="0" y1="3" x2="60" y2="3" /></svg>
+<div id="Container112" class="[NAB.Container112_effect]" ng-style="NAB.Container112_style" ng-hide="NAB.Container112_hidden" ng-disabled="NAB.Container112_disabled">[cuenta_combi]
+</div>
+<img id="Image99" alt="" ng-src="img/tarea_combi_5.PNG" class="[NAB.Image99_effect]" ng-style="NAB.Image99_style" ng-hide="NAB.Image99_hidden" ng-disabled="NAB.Image99_disabled">
+</div>
+</script>
+<script type="text/ng-template" id="t_combi_resultado">
+<div id="t_combi_resultado">
+<h1 id="Headline42" class="[NAB.Headline42_effect]" ng-style="NAB.Headline42_style" ng-hide="NAB.Headline42_hidden" ng-disabled="NAB.Headline42_disabled">Resultado final</h1>
+<div id="Container113" class="[NAB.Container113_effect]" ng-style="NAB.Container113_style" ng-hide="NAB.Container113_hidden" ng-disabled="NAB.Container113_disabled">Correctas:  [cont_divi] / 5
+</div>
+<div id="Container114" class="[NAB.Container114_effect]" ng-style="NAB.Container114_style" ng-hide="NAB.Container114_hidden" ng-disabled="NAB.Container114_disabled">Equivocadas: [cont_divi_e]  /  5
+</div>
+<div id="Container115" class="[NAB.Container115_effect]" ng-style="NAB.Container115_style" ng-hide="NAB.Container115_hidden" ng-disabled="NAB.Container115_disabled">Nota:  [nota_divi]  puntos.
+</div>
+<img id="Image103" alt="" ng-src="img/flecha_atras.svg" class="[NAB.Image103_effect]" ng-style="NAB.Image103_style" ng-hide="NAB.Image103_hidden" ng-disabled="NAB.Image103_disabled" ng-click="Image103_click()">
+</div>
+</script>
+<script type="text/ng-template" id="NewDialog">
+<div id="DialogContainer1" class="modal-dialog modal-sm"><div class="modal-content" style="height:100%">
+</div></div>
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-touch.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-sanitize.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/neoapp.min.js"></script>
+<script src="js/neoapp-ui.min.js"></script>
+<script src="service-worker.root.js"></script>
+<script src="phonegap.js"></script>
+<script src="js/main.js"></script>
+<script>if("serviceWorker"in navigator){
+if(navigator.serviceWorker.controller){console.log("Service worker already running");
+}else{navigator.serviceWorker.register("service-worker.root.js",{scope:"./"}).then(function(reg){console.log("Service worker registered for scope: "+reg.scope);});}};
+</script>
+</body>
+</html>
